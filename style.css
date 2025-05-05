@@ -1,0 +1,114 @@
+.tiro-bangla-regular {
+  font-family: "Tiro Bangla", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tiro-bangla-regular-italic {
+  font-family: "Tiro Bangla", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Basic Styles */
+body {
+    font-family: 'Tiro Bangla', sans-serif;
+    background-color: #10402a;
+    color: #222;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2 {
+    color: #00574B;
+  }
+  
+  .container {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .highlight {
+    color: #c0392b;
+    font-weight: bold;
+  }
+  
+  /* Product Gallery Styles */
+  .product-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .product-gallery-grid img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .product-gallery-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Logo Styles */
+  .logo {
+    max-width: 160px;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .logo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 20px rgba(23, 117, 23, 0.5); /* Green shadow */
+  }
+  
+  /* Button Styles */
+  .button {
+    background-color: #00574B;
+    color: #fff;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #003b32; /* Darker green on hover */
+  }
+  
+  /* Section Styles */
+  .section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Responsive Layout */
+  @media (max-width: 768px) {
+    .product-gallery-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .product-gallery-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
