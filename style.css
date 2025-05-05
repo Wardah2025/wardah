@@ -111,4 +111,38 @@ body {
       grid-template-columns: 1fr;
     }
   }
-  
+/* Hide mobile slider on desktop */
+.mobile-slider {
+  display: none;
+}
+
+/* Slider styles for mobile */
+@media (max-width: 480px) {
+  .product-gallery-grid {
+    display: none;
+  }
+
+  .mobile-slider {
+    display: block;
+    overflow-x: scroll;
+    white-space: nowrap;
+    padding: 10px;
+  }
+
+  .mobile-slider .slide-track img {
+    width: 80%;
+    max-width: 300px;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    scroll-snap-align: start;
+  }
+
+  .mobile-slider .slide-track {
+    display: inline-flex;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+  }
+}
